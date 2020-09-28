@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <script>
+        function f(strv)
+        {
+            var step=50;
+            switch(strv)
+            {
+                case 1:
+                var x=document.getElementById("i1").offsetTop;
+                x=x-step;
+                document.getElementById("i1").style.top=x+"px";
+                break;
+                case 2:
+                var x=document.getElementById("i1").offsetTop;
+                x=x+step;
+                document.getElementById("i1").style.top=x+"px";
+                break;
+                case 3:
+                var y=document.getElementById("i1").offsetLeft;
+                y=y-step;
+                document.getElementById("i1").style.left=y+"px";
+                break;
+                case 4:
+                var y=document.getElementById("i1").offsetLeft;
+                y=y+step;
+                document.getElementById("i1").style.left=y+"px";
+                break;
+            }
+        }
+    </script>
+        <img src="spiderMan.png" length="100" height="100" id="i1" style="position: absolute; left: 500; right: 200;" />   
+        <br><br><br><br><br><br>
+        <input type="button" onclick="f(1)" value="UP"/>
+        <br>
+        <input type="button" onclick="f(2)" value="down"/>
+        <br>
+        <input type="button" onclick="f(3)" value="left"/>
+        <br>
+        <input type="button" onclick="f(4)" value="right"/>
+        <br>
+         
+    </body>
+</html>
